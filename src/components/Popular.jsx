@@ -61,7 +61,7 @@ function Popular() {
 const Wrapper = styled.div`
 	margin: 4rem 0rem;
 
-	@media (max-width: 375px) {
+	@media (max-width: 840px) {
 		/* iPhone X */
 		display: none; /* Hide the entire Wrapper component */
 	}

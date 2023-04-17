@@ -25,8 +25,9 @@ const Search = () => {
 const FormStyle = styled.form`
 	margin: 0rem 20rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1296px) {
 		margin: 0rem 1rem;
+		margin-top: 60px;
 	}
 `;
 

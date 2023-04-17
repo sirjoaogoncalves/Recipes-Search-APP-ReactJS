@@ -30,6 +30,10 @@ const List = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 710px) {
+		flex-wrap: wrap;
+		top: 50%;
+	}
 `;
 
 const StyledLink = styled(NavLink)`
@@ -64,13 +68,14 @@ const StyledLink = styled(NavLink)`
 	}
 
 	/* Media query for mobile devices */
-	@media (max-width: 768px) {
+	@media (max-width: 710px) {
 		margin-right: 1rem;
 		width: 6rem;
 		height: 7rem;
 		transform: scale(0.8);
 		h4 {
 			font-size: 1.4rem;
+			margin-top: 1rem;
 		}
 		svg {
 			font-size: 1.2rem;
