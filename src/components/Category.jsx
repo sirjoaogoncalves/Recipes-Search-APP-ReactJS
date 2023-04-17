@@ -49,19 +49,32 @@ const StyledLink = styled(NavLink)`
 		color: white;
 		font-size: 1rem;
 	}
-	svg{
+	svg {
 		color: white;
-		font-size: 1.8rem
+		font-size: 1.8rem;
 	}
-	&.active{
+	&.active {
 		background: linear-gradient(to right, rgb(190, 45, 45), #ce7979);
-		svg{
+		svg {
 			color: white;
 		}
-		h4{
+		h4 {
 			color: white;
 		}
 	}
-`
 
+	/* Media query for mobile devices */
+	@media (max-width: 768px) {
+		margin-right: 1rem;
+		width: 6rem;
+		height: 7rem;
+		transform: scale(0.8);
+		h4 {
+			font-size: 1.4rem;
+		}
+		svg {
+			font-size: 1.2rem;
+		}
+	}
+`;
 export default Category;

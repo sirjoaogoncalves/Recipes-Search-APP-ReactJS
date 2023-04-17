@@ -60,12 +60,18 @@ function Popular() {
 
 const Wrapper = styled.div`
 	margin: 4rem 0rem;
+
+	@media (max-width: 375px) {
+		/* iPhone X */
+		display: none; /* Hide the entire Wrapper component */
+	}
 `;
 
 const Card = styled.div`
 	min-height: 25rem;
 	border-radius: 2rem;
 	overflow: hidden;
+	position: relative; /* Add position: relative for absolute positioning of child elements */
 
 	img {
 		border-radius: 2rem;
@@ -75,6 +81,7 @@ const Card = styled.div`
 		height: 100%;
 		object-fit: cover;
 	}
+
 	p {
 		position: absolute;
 		z-index: 10;
@@ -90,6 +97,11 @@ const Card = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	@media (max-width: 375px) {
+		/* iPhone X screen width */
+		min-height: 15rem; /* Adjust minimum height for smaller screens */
 	}
 `;
 

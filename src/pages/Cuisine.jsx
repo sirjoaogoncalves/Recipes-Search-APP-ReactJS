@@ -38,6 +38,12 @@ const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-gap: 3rem;
+
+	/* Media query for mobile devices */
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+	}
 `;
 
 const Card = styled.div`
@@ -53,5 +59,4 @@ const Card = styled.div`
 		padding: 1rem;
 	}
 `;
-
 export default Cuisine;
